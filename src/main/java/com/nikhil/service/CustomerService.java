@@ -11,7 +11,7 @@ import com.nikhil.entity.Customer;
 
 public interface CustomerService {
 
-   // Customer createCustomer(Customer customer);
+   
    CustomerResponseDTO createCustomer(CustomerRequestDTO customer);
     Customer getCustomerById(Long id);
 

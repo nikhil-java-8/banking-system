@@ -25,15 +25,14 @@ import lombok.RequiredArgsConstructor;
 public class TransactionServiceImpl implements TransactionService {
 	 @Autowired
 	    AccountRepository accountRepository;
-	 
-
-   // private final AccountRepository accountRepository = null;
+	 @Autowired 
+	 AuditService auditService;
    @Autowired
 	 TransactionRepository transactionRepository ;
 
     
    @Override
-    @Transactional   // 🔥 VERY IMPORTANT
+    @Transactional   
     public TransactionResponseDTO transferMoney(String fromAccNum, String toAccNum, Double amount) {
 
         Account from = accountRepository.findByAccountNumber(fromAccNum)
@@ -71,10 +70,9 @@ System.out.println("to"+to);
         txn.setDate(LocalDateTime.now());
         System.out.println(txn);
         transactionRepository.save(txn);
-       // accountRepository.saveAndFlush();   // 🔥 ADD THIS
         transactionRepository.saveAndFlush(txn); 
-        auditService.log(username, "DEPOSIT", accountId,
-                amount, "SUCCESS", "Amount deposited");
+      //  auditService.log(username, "DEPOSIT", accountId,
+        //        amount, "SUCCESS", "Amount deposited");
         TransactionResponseDTO trd=new TransactionResponseDTO();
         trd.setFromAccountId(fromAccNum);
         trd.setToAccountId(toAccNum);

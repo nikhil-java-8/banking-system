@@ -17,7 +17,7 @@ public class AuditService {
     public void log(String username, String action, Long accountId,
                     Double amount, String status, String description) {
 
-        AuditLog log = AuditLog.builder()
+      /*  AuditLog log = AuditLog.builder()
                 .username(username)
                 .action(action)
                 .accountId(accountId)
@@ -27,6 +27,6 @@ public class AuditService {
                 .timestamp(LocalDateTime.now())
                 .build();
 
-        auditRepo.save(log);
+        auditRepo.save(log);*/
     }
 }
