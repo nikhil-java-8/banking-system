@@ -80,6 +80,12 @@ com.nikhil
 5. Unauthorized access is blocked
 
 ---
+## Banking System Flow Diagram 🚀
+
+This diagram represents the complete backend flow of the banking system, 
+including authentication, account management, transactions, and audit logging.
+<img width="1536" height="1024" alt="ChatGPT Image Mar 29, 2026, 10_05_19 AM" src="https://github.com/user-attachments/assets/59e19dd3-5dfa-4c2f-9d00-eaffce5ba7a1" />
+
 
 ## 🗄️ Database Design
 
@@ -125,6 +131,7 @@ mvn spring-boot:run
 
 ## 📸 Screenshots
 
+<img width="1920" height="1080" alt="Screenshot (98)" src="https://github.com/user-attachments/assets/2b4ad8e8-579e-4d8a-a18e-5d88be01d362" />
 
 ---
 
@@ -137,8 +144,6 @@ mvn spring-boot:run
 * Microservices Architecture
 
 ---
-<img width="1920" height="1080" alt="Screenshot (98)" src="https://github.com/user-attachments/assets/2b4ad8e8-579e-4d8a-a18e-5d88be01d362" />
-
 ## 👨‍💻 Author
 
 **Nikhil Dagadkar**
