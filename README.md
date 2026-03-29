@@ -125,7 +125,6 @@ mvn spring-boot:run
 ## 🧪 Testing
 
 * Use Postman to test APIs
-* Import collection (if available)
 
 ---
 
